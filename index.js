@@ -23,10 +23,13 @@ function paginate(page, limit) {
   return data.slice(itemsAfter, endOn)
 }
 
+// Normal 1st page loading
 // console.log(JSON.stringify(paginate(1,10)));
 
+// Will load one record 
 // console.log(JSON.stringify(paginate(0,0)));
 
+// Will load the last record of the page more than last page
 // console.log(JSON.stringify(paginate(201,10)));
 
 // Please put custom validations on negative values of page number and limit
